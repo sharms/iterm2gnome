@@ -7,12 +7,6 @@ require 'nokogiri-plist'
 #  -> foreground_color
 #  -> palette
 
-# Retrieve entries gconftool-2 --all-entries /apps/gnome-terminal/profiles/Default
-# gconftool-2 --set /apps/gnome-terminal/profiles/Default/font --type string "Consolas 10"
-# gconftool-2 --set /apps/gnome-terminal/profiles/Default/foreground_color --type string "#AAAAAAAAAAAA"
-# gconftool-2 --set /apps/gnome-terminal/profiles/Default/background_color --type string "#000000000000"
-# gconftool-2 --set /apps/gnome-terminal/profiles/Default/palette --type string "#000000000000:#CDCD00000000:#0000CDCD0000:#CDCDCDCD0000:#00000000CDCD:#CDCD0000CDCD:#0000CDCDCDCD:#FAFAEBEBD7D7:#B18CB18CB18C:#E5E522222222:#A6A6E3E32D2D:#FCFC95951E1E:#C4C48D8DFFFF:#FAFA25257373:#6767D9D9F0F0:#F2F2F2F2F2F2"
-
 def convert_to_key(real_color)
 	return "%02X" % (real_color * 255)
 end
