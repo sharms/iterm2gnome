@@ -7,7 +7,7 @@ A script to convert iTerm2 themes to gnome-terminal themes that uses
 
 ##Usage
 
-    ./itermtogt.rb /path/to/iterm_scheme.itermcolors
+    ./convert.rb /path/to/iterm_scheme.itermcolors
 
 ##Example:
 
